@@ -1,6 +1,6 @@
-# 🏎️ Lowpoly Racer
+# 🏎️ Neon Racer
 
-A 3D time-trial racing game that runs in the browser — built with Three.js (bundled locally, no CDN needed), plain CSS, and vanilla JavaScript.
+A cyberpunk 3D night-city time-trial racing game in the browser — built with Three.js (bundled locally, no CDN needed), plain CSS, and vanilla JavaScript.
 
 ## Play
 
@@ -10,16 +10,15 @@ Works on phone and desktop.
 
 ## Features
 
-- High-resolution rendering: up to 3x pixel density, ACES tone mapping, anisotropic texture filtering
-- Real-time soft shadows that follow your car, gradient sky with sun and drifting clouds
-- Detailed race car: hood scoop, rear wing, mirrors, rims, driver helmet, headlights
-- Textured asphalt and grass, snow-capped mountains, start gantry, drift dust particles
-- Adaptive quality: automatically steps down resolution/shadows if the frame rate dips
-- Arcade car physics with **drift** (handbrake slides the rear out)
-- Time-trial laps with checkpoint validation, wrong-way warning, and live timing
-- **Ghost car** — your best lap is recorded and replayed as a translucent rival
+- Night-city street circuit: glowing skyscrapers, neon billboards, street lamps, rooftop beacons
+- Neon tunnel district with light arches, glowing lane lines, wet-look asphalt
+- Player car with neon underglow, working headlights, and light trails
+- Ambient city traffic to dodge (GTA style)
+- Arcade drift physics, lap timing with checkpoint validation, wrong-way warning
+- **Ghost car** — your best lap replayed as a translucent rival
 - Best lap saved in your browser
-- Chase camera, engine sound that follows your speed, countdown start
+- High-resolution rendering: up to 3x pixel density, ACES tone mapping, soft shadows
+- Adaptive quality: steps down resolution/shadows if the frame rate dips
 - Touch controls on phones (steer / brake / drift), keyboard on desktop
   - Desktop: ← → or A/D steer, ↓ or S brake, Space drift (auto-gas)
 
@@ -34,8 +33,8 @@ npx serve .
 ## Files
 
 - `index.html` — page, HUD, touch controls, overlays
-- `styles.css` — HUD and menu styling, responsive + safe-area support
-- `game.js` — track generation, physics, laps, ghost, audio, game loop (ES module)
+- `styles.css` — neon HUD and menu styling, responsive + safe-area support
+- `game.js` — city generation, physics, laps, ghost, traffic, audio, game loop (ES module)
 - `three.module.min.js` — Three.js r160, bundled locally
 
 Deployed with GitHub Pages from the `main` branch.
