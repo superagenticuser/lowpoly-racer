@@ -10,7 +10,11 @@ Works on phone and desktop.
 
 ## Features
 
-- Low-poly 3D track with trees, mountains, curbs, and a checkered start line
+- High-resolution rendering: up to 3x pixel density, ACES tone mapping, anisotropic texture filtering
+- Real-time soft shadows that follow your car, gradient sky with sun and drifting clouds
+- Detailed race car: hood scoop, rear wing, mirrors, rims, driver helmet, headlights
+- Textured asphalt and grass, snow-capped mountains, start gantry, drift dust particles
+- Adaptive quality: automatically steps down resolution/shadows if the frame rate dips
 - Arcade car physics with **drift** (handbrake slides the rear out)
 - Time-trial laps with checkpoint validation, wrong-way warning, and live timing
 - **Ghost car** — your best lap is recorded and replayed as a translucent rival
