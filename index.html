@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Lowpoly Racer — a 3D time-trial racing game in the browser. Drift, chase your ghost, set your best lap." />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Lowpoly Racer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+    { "imports": { "three": "./three.module.min.js" } }
+  </script>
+</head>
+<body>
+  <div id="gameContainer"></div>
+
+  <!-- HUD -->
+  <div id="hud" class="hidden">
+    <div class="hud-top">
+      <div class="hud-times">
+        <div class="time-row"><span>Lap</span><strong id="hudLap">1</strong></div>
+        <div class="time-row"><span>Time</span><strong id="hudTime">0:00.0</strong></div>
+        <div class="time-row"><span>Last</span><strong id="hudLast">--:--.-</strong></div>
+        <div class="time-row best"><span>Best</span><strong id="hudBest">--:--.-</strong></div>
+      </div>
+      <div class="hud-right">
+        <div class="speed"><strong id="hudSpeed">0</strong><span>km/h</span></div>
+        <button class="icon-btn" id="muteBtn" aria-label="Toggle sound">🔊</button>
+      </div>
+    </div>
+    <div id="message"></div>
+    <div id="wrongWay" class="hidden">⚠️ WRONG WAY</div>
+  </div>
+
+  <!-- Touch controls -->
+  <div id="touchControls" class="hidden">
+    <div class="steer-zone">
+      <button class="touch-btn" id="btnLeft" aria-label="Steer left">◀</button>
+      <button class="touch-btn" id="btnRight" aria-label="Steer right">▶</button>
+    </div>
+    <div class="pedal-zone">
+      <button class="touch-btn small" id="btnDrift" aria-label="Drift">DRIFT</button>
+      <button class="touch-btn small" id="btnBrake" aria-label="Brake">BRAKE</button>
+    </div>
+  </div>
+
+  <!-- Menu overlay -->
+  <div id="menu" class="overlay">
+    <div class="panel">
+      <p class="kicker">3D time trial</p>
+      <h1>LOWPOLY<br />RACER</h1>
+      <p class="hint" id="menuHint">Beat your best lap. Your ghost will chase you.</p>
+      <p class="best-line">Best lap: <strong id="menuBest">--:--.-</strong></p>
+      <button class="big-btn" id="startRaceBtn">🏁 Race</button>
+      <p class="controls-hint" id="controlsHint"></p>
+    </div>
+  </div>
+
+  <!-- Countdown / pause overlay -->
+  <div id="centerOverlay" class="overlay hidden">
+    <div id="countdown"></div>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
