@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 // ============================================================
-// NEON RACER — cyberpunk night-city time-trial racing
+// NEON RACER - cyberpunk night-city time-trial racing
 // ============================================================
 
 // ---------- DOM ----------
@@ -306,7 +306,7 @@ function offsetPts(dist) {
   scene.add(g);
 }
 
-// road — dark wet asphalt with specular sheen
+// road - dark wet asphalt with specular sheen
 {
   const road = new THREE.Mesh(
     ribbonGeometry(offsetPts(ROAD_HALF), offsetPts(-ROAD_HALF), 1, null),
@@ -1026,7 +1026,7 @@ document.addEventListener('visibilitychange', () => {
   if (document.hidden && state === 'racing') {
     state = 'paused';
     pauseBegin = performance.now();
-    countdownEl.textContent = '⏸ Paused — tap to resume';
+    countdownEl.textContent = '⏸ Paused - tap to resume';
     centerOverlay.classList.remove('hidden');
   }
 });
